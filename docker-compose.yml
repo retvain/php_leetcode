@@ -1,0 +1,15 @@
+version: '3.7'
+services:
+  php-fpm-leetcode:
+    container_name: php-fpm-leetcode
+    ports:
+      - 9000
+    build:
+      context: ./.docker/php
+      args:
+        HOST_UID: 1000
+    volumes:
+      - .:/var/www/php_leetcode
+    environment:
+      #XDEBUG_CONFIG: "remote_host=host.docker.internal remote_enable=1"
+      PHP_IDE_CONFIG: "serverName=Docker"

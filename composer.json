@@ -1,0 +1,15 @@
+{
+  "name": "retvain/php-leetcode",
+  "require": {
+    "php": ">=8.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Solutions\\": "solutions/",
+      "SolutionInterfaces\\": "interfaces/"
+    }
+  },
+  "config": {
+    "sort-packages": true
+  }
+}
